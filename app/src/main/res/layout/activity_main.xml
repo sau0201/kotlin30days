@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:src="@drawable/empty_dice"
+    tools:src="@drawable/empty_dice"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="211dp"
+        android:layout_height="24dp"
+        android:text="Dice Roller"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/empty_dice"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="100sp"
+        app:layout_constraintTop_toTopOf="@id/title"
+        tools:layout_editor_absoluteX="102dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="135dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="136dp"
+        android:text="Roll"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="499dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
